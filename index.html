@@ -33,8 +33,9 @@ layout: default
                     <a href="/categories/#category-{{ category | prepend: site.baseurl }}" class="tag {% if site.data.category[category].color %} is-{{ site.data.category[category].color }} {% endif %}">{{ category }}</a>
                     {% endfor %}
                 </p>
+                 <p>Posted on: <small>02.02.2017 - 06:36</small></p>
                 {{ post.description | markdownify }}
-                <p><small>02.02.2017 - 06:36</small></p>
+               
             </div>
         </div>
         <hr>
