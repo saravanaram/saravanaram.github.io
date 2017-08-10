@@ -23,7 +23,7 @@ author:
 
 system:
   fb_app: ""
-permalink: /:categories/:title/
+permalink: /:title/
 
 sass:
   style: compressed
