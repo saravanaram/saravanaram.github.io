@@ -6,11 +6,6 @@ description: "List of problems and solutions for CTCI Chapter 1"
 keywords: "ctci,code"
 ---
 
-## CTCI Chapter 1 
-List of problems and hints mentioned in CTCI Chapter 1 (Array & Strings).
-
-<!--excerpt-->
-
 ### Interview Questions
 
 #### 1.1 Is Unique: 
