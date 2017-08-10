@@ -26,8 +26,8 @@ layout: default
                 </figure>
             </div>
             {% endif %}
-            <div class="content is-success">
-                <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+            <div class="content ">
+                <h3 class="post-title is-success"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
                 <p class="post-categories">
                     {% for category in post.categories %}
                     <a href="/categories/#category-{{ category | prepend: site.baseurl }}" class="tag {% if site.data.category[category].color %} is-{{ site.data.category[category].color }} {% endif %}">{{ category }}</a>
