@@ -44,11 +44,12 @@ permalink: archives.html
     {% endfor %}
 
 </div>
-  
+        </aside>
+        <aside>
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
   <article>
-   <span class="tag is-dark">{{ this_tag }}</span>
+   <span class="tag is-light is-medium">{{ this_tag }}</span>
 <ul>
     {% for post in site.tags[this_tag] %}
     {% if post.title != null %}
