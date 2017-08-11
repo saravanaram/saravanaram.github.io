@@ -1,18 +1,7 @@
 ---
 layout: default
 ---
-<!--<section class="hero is-primary">
-    <div class="hero-body">
-        <div class="container is-fluid">
-            <h1 class="title">
-                Saravanan
-            </h1>
-            <h2 class="subtitle">
-                I am a stackoverflow developer!
-            </h2>
-        </div>
-    </div>
-</section>-->
+
 <section class="section">
     <div class="container is-fluid">
         {% for post in paginator.posts %}
@@ -41,7 +30,7 @@ layout: default
         <hr>
         {% endfor %}
         <nav class="pagination is-centered">
-              <ul class="pagination-list">
+              <ul class="pagination-list has-text-success">
             <li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %}">Previous Page</a></li>
                       
                 {% for page in (1..paginator.total_pages) %}
