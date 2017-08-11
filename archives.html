@@ -64,12 +64,13 @@ permalink: archives.html
         {% if post.link %}
         <a href="{{ post.link }}" class="has-text-success">
         {% else %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="link is-warning">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="has-text-success">
         {% endif %}  
           {{ post.title }}
         </a>
       </li>
     {% endif %}
+            <br>
     {% endfor %}
     </ul>
   </article>
