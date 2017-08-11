@@ -60,9 +60,9 @@ permalink: archives.html
   </div>     
     {% endunless %}
     {% endfor %}
-  
+    </aside>
 </div>
-
+    <ul class="menu-list">
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
   <article>
@@ -88,6 +88,6 @@ permalink: archives.html
   </article>
 {% endunless %}
 {% endfor %}
-  </aside>
+        </ul>
     </div>
 </section>
