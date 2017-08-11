@@ -16,7 +16,7 @@ layout: default
             </div>
             {% endif %}
             <div class="content ">
-                <h3 class="post-title is-success"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+                <h3 class="post-title is-dark"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
                 <p class="post-categories">
                     {% for category in post.categories %}
                     <a href="/categories/#category-{{ category | prepend: site.baseurl }}" class="tag {% if site.data.category[category].color %} is-{{ site.data.category[category].color }} {% endif %}">{{ category }}</a>
@@ -29,8 +29,8 @@ layout: default
         </div>
         <hr>
         {% endfor %}
-        <nav class="pagination is-centered">
-              <ul class="pagination-list has-text-success">
+        <nav class="pagination is-centered is-dark">
+              <ul class="pagination-list has-text-dark">
             <li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %}">Previous Page</a></li>
                       
                 {% for page in (1..paginator.total_pages) %}
