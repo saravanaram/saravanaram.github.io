@@ -40,7 +40,9 @@ permalink: archives.html
 {% endcapture %}
 
 {% assign tags_list = site_tags | split:',' | sort %}
-
+<section class="section">
+    <div class="container is-fluid">
+        <aside class="menu">
 <div class="field is-grouped is-grouped-multiline">
 
     {% for item in (0..site.tags.size) %}
@@ -86,3 +88,6 @@ permalink: archives.html
   </article>
 {% endunless %}
 {% endfor %}
+  </aside>
+    </div>
+</section>
