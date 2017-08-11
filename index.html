@@ -18,11 +18,11 @@ layout: default
             <div class="content ">
                 <h3 class="post-title is-dark"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
                 <p class="post-categories">
-                     <p class="tag">
+                     <p class="tag"> tags: 
                     {% for category in post.categories %}
-                   {{ category }},
+                    {{ category }}, 
                     {% endfor %}
-                 Posted on: <small>{{post.date}}</small></p></p>
+                 Posted on: <small> {{post.date}} </small></p></p>
                  
                 {{ post.description | markdownify }}
                
