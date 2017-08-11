@@ -53,10 +53,10 @@ permalink: archives.html
   <article>
    <span class="tag is-light is-medium">{{ this_tag }}</span>
       <br>
-<ul>
+<ul class="menu-list">
     {% for post in site.tags[this_tag] %}
     {% if post.title != null %}
-      <li class="is-info">
+      <li>
         {% if post.link %}
         <a href="{{ post.link }}">
         {% else %}
