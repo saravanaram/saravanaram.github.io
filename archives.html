@@ -62,7 +62,7 @@ permalink: archives.html
     {% if post.title != null %}
       <li>
         {% if post.link %}
-        <a href="{{ post.link }}" class="link is-warning">
+        <a href="{{ post.link }}" class="has-text-success">
         {% else %}
         <a href="{{ post.url | prepend: site.baseurl }}" class="link is-warning">
         {% endif %}  
