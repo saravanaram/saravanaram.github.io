@@ -56,7 +56,7 @@ permalink: archives.html
 <ul>
     {% for post in site.tags[this_tag] %}
     {% if post.title != null %}
-      <li>
+      <li class="is-info">
         {% if post.link %}
         <a href="{{ post.link }}">
         {% else %}
@@ -75,11 +75,3 @@ permalink: archives.html
     </div>
         </aside>
 </section>
-<div class="tabs">
-  <ul>
-    <li><a href="/">Home</a></li><br>
-    <li><a href="/about.html">About</a></li><br>
-    <li><a href="/archives.html">Archives</a></li><br>
-    <li><a href="/feed.xml">Feed</a></li><br>
-  </ul>
-</div>
