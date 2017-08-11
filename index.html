@@ -18,11 +18,12 @@ layout: default
             <div class="content ">
                 <h3 class="post-title is-dark"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
                 <p class="post-categories">
+                     <p class="tag">
                     {% for category in post.categories %}
-                    <a href="/categories/#category-{{ category | prepend: site.baseurl }}" class="tag {% if site.data.category[category].color %} is-{{ site.data.category[category].color }} {% endif %}">{{ category }}</a>
+                   {{ category }}
                     {% endfor %}
-                </p>
-                 <p>Posted on: <small>02.02.2017 - 06:36</small></p>
+                </p></p>
+                 <p>Posted on: <small>{{post.date}}</small></p>
                 {{ post.description | markdownify }}
                
             </div>
