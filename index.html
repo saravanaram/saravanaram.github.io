@@ -22,7 +22,7 @@ layout: default
                     {% for category in post.categories %}
                     {{ category }}, 
                     {% endfor %}
-                 Posted on:<small>{{post.date | date: ' %B %d, %Y'}}</small></p></p>
+                 Posted on:&nbsp;{{post.date | date: ' %B %d, %Y'}}</p></p>
                  
                 {{ post.description | markdownify }}
                
