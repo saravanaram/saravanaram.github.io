@@ -8,7 +8,14 @@ layout: default
     <h1 class="title">
                 {{ page.title }}
             </h1>
+
             <h2 class="subtitle">
+                      <p class="post-categories">
+                     <p class="tag"> tags: 
+                    {% for category in post.categories %}
+                    {{ category }}, 
+                    {% endfor %}
+Posted on:&nbsp;{{post.date | date: ' %B %d, %Y'}}</p></p>
                 {{ page.description }}
             </h2>
     </div>
