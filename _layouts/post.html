@@ -12,10 +12,10 @@ layout: default
             <h2 class="subtitle">
                       <p class="post-categories">
                      <p class="tag"> tags: 
-                    {% for category in post.categories %}
+                    {% for category in page.categories %}
                     {{ category }}, 
                     {% endfor %}
-Posted on:&nbsp;{{post.date | date: ' %B %d, %Y'}}</p></p>
+Posted on:&nbsp;{{page.date | date: ' %B %d, %Y'}}</p></p>
                 {{ page.description }}
             </h2>
     </div>
