@@ -3,7 +3,9 @@ layout: default
 ---
 <p><p>
 <div class="content is-medium">
- <p> <h2>{{ page.title }}</h2></p>
+<section class="section">
+    <div class="container is-fluid">
+   <p> <h2>{{ page.title }}</h2></p>
 <h3<
 <p class="post-categories">
  <p class="tag"> tags: 
@@ -15,11 +17,7 @@ Posted on:&nbsp;{{page.date | date: ' %B %d, %Y'}}</p></p>
 {{ page.description }}
     </h3>
  
-
-
-<section class="section">
-    <div class="container is-fluid">
-       
+     
             {{ content }}
 
     </div>
