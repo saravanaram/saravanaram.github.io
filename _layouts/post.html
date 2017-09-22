@@ -3,22 +3,17 @@ layout: default
 ---
  <section class="section">
     <div class="container">
-      <h1 class="title">Section</h1>
+      <h1 class="title"> {{ page.title }}</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
-    </div>
-  </section>
- <div class="content is-medium">
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-    <h1 class="title">
- {{ page.title }}
-            </h1>
-
-            <h2 class="subtitle">
  <p class="post-categories">
+ <p class="tag"> tags: 
+ {% for category in page.categories %}
+{{ category }}, 
+ {% endfor %}
+Posted on:&nbsp;{{page.date | date: ' %B %d, %Y'}}</p></p>
+                   </h2>
+    </div>
+<p class="post-categories">
  <p class="tag"> tags: 
  {% for category in page.categories %}
 {{ category }}, 
@@ -29,10 +24,10 @@ Posted on:&nbsp;{{page.date | date: ' %B %d, %Y'}}</p></p>
     <h3>
 {{ page.description }}
     </h3>
-    </div>
-  </div>
-</section>
+  </section>
 
+</section>
+<div class="content is-medium">
 
 <section class="section">
     <div class="container is-fluid">
