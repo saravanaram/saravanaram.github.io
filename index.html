@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="content is-medium">
+
 <section class="section">
     <div class="container is-fluid">
         {% for post in paginator.posts %}
@@ -15,7 +15,7 @@ layout: default
                 </figure>
             </div>
             {% endif %}
-            <div class="content ">
+            <div class="content is-medium">
                 <h3 class="post-title is-dark"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="has-text-info">{{ post.title }}</a></h3>
                 <p class="post-categories">
                      <p class="tag"> tags: 
