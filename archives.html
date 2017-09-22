@@ -14,7 +14,7 @@ permalink: archives.html
         </div>
     </div>
 </section>
-
+<div class="content is-medium">
 {% capture site_tags %}
 {% for tag in site.tags %}
 {{ tag | first }}{% unless forloop.last %},{% endunless %}
@@ -80,3 +80,4 @@ permalink: archives.html
     </div>
         </aside>
 </section>
+</div>
