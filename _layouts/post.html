@@ -1,33 +1,19 @@
 ---
 layout: default
 ---
- <section class="section">
-    <div class="container">
-      <h1 class="title"> {{ page.title }}</h1>
-      <h2 class="subtitle">
- <p class="post-categories">
- <p class="tag"> tags: 
- {% for category in page.categories %}
-{{ category }}, 
- {% endfor %}
-Posted on:&nbsp;{{page.date | date: ' %B %d, %Y'}}</p></p>
-                   </h2>
-    </div>
+<div class="content is-medium">
+<p> {{ page.title }}</p>
 <p class="post-categories">
  <p class="tag"> tags: 
  {% for category in page.categories %}
 {{ category }}, 
  {% endfor %}
 Posted on:&nbsp;{{page.date | date: ' %B %d, %Y'}}</p></p>
-              
-            </h2>
-    <h3>
+
 {{ page.description }}
     </h3>
-  </section>
+ 
 
-</section>
-<div class="content is-medium">
 
 <section class="section">
     <div class="container is-fluid">
