@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<div class="content is-medium">
 <section class="section">
     <div class="container is-fluid">
         {% for post in paginator.posts %}
@@ -30,6 +30,7 @@ layout: default
         </div>
         <hr>
         {% endfor %}
+    </div>
         <nav class="pagination is-centered is-dark">
               <ul class="pagination-list has-text-dark">
             <li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %} has-text-info">Previous Page</a></li>
