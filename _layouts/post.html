@@ -6,20 +6,20 @@ layout: default
   <div class="hero-body">
     <div class="container">
     <h1 class="title">
-                {{ page.title }}
+ {{ page.title }}
             </h1>
 
             <h2 class="subtitle">
-                      <p class="post-categories">
-                     <p class="tag"> tags: 
-                    {% for category in page.categories %}
-                    {{ category }}, 
-                    {% endfor %}
+ <p class="post-categories">
+ <p class="tag"> tags: 
+ {% for category in page.categories %}
+{{ category }}, 
+ {% endfor %}
 Posted on:&nbsp;{{page.date | date: ' %B %d, %Y'}}</p></p>
               
             </h2>
     <h3>
-        {{ page.description }}
+{{ page.description }}
     </h3>
     </div>
   </div>
