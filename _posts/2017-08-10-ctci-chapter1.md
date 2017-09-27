@@ -17,7 +17,7 @@ slug: ctci-chapter-1
 Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 
 Hints: #44, #117, #132
-~~~ C
+```C
 int isUniqueBruteForce(char* s)
 {
 	int len = strlen(s) - 1;
@@ -33,7 +33,7 @@ int isUniqueBruteForce(char* s)
 	}
 	return 1;
 }
-~~~
+```
 ### 1.2 Check Permutation: 
 Given two strings, write a method to decide if one is a permutation of the other.
 
