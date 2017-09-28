@@ -33,21 +33,21 @@ permalink: archives.html
     {% unless forloop.last %}
       {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
      
-        <a href="#{{ this_tag }}">
+        <!--<a href="#{{ this_tag }}">-->
               <span class="tag">{{ this_tag }}</span>
       <span class="tag is-info">{{ site.tags[this_tag].size }}</span>
   
-        </a>
+        <!--</a>-->
  </div>
 <!--   </div>    --> 
     {% endunless %}
     {% endfor %}
 
-<!--</div>-->
-        </aside>
+<!--</div>
+        </aside>-->
         <hr>
         <p></p>
-        <aside>
+        <!--<aside>-->
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
   <article>
