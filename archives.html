@@ -19,7 +19,6 @@ permalink: archives.html
 
 {% assign tags_list = site_tags | split:',' | sort %}
 
-<div class="tag-index">
     <div class="field is-grouped is-grouped-multiline">
   <div class="control">
 
@@ -38,7 +37,7 @@ permalink: archives.html
     {% endfor %}
 
 </div>
-
+</div>
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
   <article>
@@ -65,5 +64,5 @@ permalink: archives.html
 {% endunless %}
 {% endfor %}
 </div>
-    </div>
-</div>
+  
+
