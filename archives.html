@@ -20,6 +20,8 @@ permalink: archives.html
 {% assign tags_list = site_tags | split:',' | sort %}
 
 <div class="tag-index">
+    <div class="field is-grouped is-grouped-multiline">
+  <div class="control">
   <ul class="block">
     {% for item in (0..site.tags.size) %}
     {% unless forloop.last %}
@@ -62,4 +64,6 @@ permalink: archives.html
   </article>
 {% endunless %}
 {% endfor %}
+</div>
+    </div>
 </div>
