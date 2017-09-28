@@ -23,13 +23,13 @@ permalink: archives.html
 
 {% assign tags_list = site_tags | split:',' | sort %}
 <section class="section">
-    <div class="container is-fluid">
+   <!-- <div class="container is-fluid">
         <aside class="menu">
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped is-grouped-multiline">-->
 
     {% for item in (0..site.tags.size) %}
-     <div class="control">
-    <div class="tags has-addons">
+   <!--  <div class="control"> 
+    <div class="tags has-addons"> -->
     {% unless forloop.last %}
       {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
      
@@ -38,12 +38,12 @@ permalink: archives.html
       <span class="tag is-info">{{ site.tags[this_tag].size }}</span>
   
         </a>
-  </div>
-  </div>     
+<!--  </div>
+  </div>    --> 
     {% endunless %}
     {% endfor %}
 
-</div>
+<!--</div>-->
         </aside>
         <hr>
         <p></p>
@@ -78,6 +78,6 @@ permalink: archives.html
 {% endfor %}
         </ul>
     </div>
-        </aside>
+        <!--</aside> -->
 </section>
 </div>
