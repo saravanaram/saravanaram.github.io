@@ -11,46 +11,53 @@ permalink: archives.html
     </div>
 </section>
 <div class="content is-medium">
-    {% capture site_tags %}
-        {% for tag in site.tags %}
-            {{ tag | first }}{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    {% endcapture %}
-    {% assign tags_list = site_tags | split:',' | sort %}
+{% capture site_tags %}
+{% for tag in site.tags %}
+{{ tag | first }}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+{% endcapture %}
+
+{% assign tags_list = site_tags | split:',' | sort %}
+
+<div class="tag-index">
+  <ul>
     {% for item in (0..site.tags.size) %}
-        {% unless forloop.last %}
-            {% capture this_tag %}
-                {{ tags_list[item] | strip_newlines }}
-            {% endcapture %}
-            <div class="tags has-addons">
-            <span class="tag">{{ this_tag }}</span>
-            <span class="tag is-info">{{ site.tags[this_tag].size }}</span>
-            </div>
-        {% endunless %}
+    {% unless forloop.last %}
+      {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+      <li>
+        <a href="#{{ this_tag }}">
+          <span>{{ this_tag }}</span>
+          <span class="count">{{ site.tags[this_tag].size }}</span>
+        </a>
+      </li>
+    {% endunless %}
     {% endfor %}
-    <br>
-    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-        {% capture this_tag %}
-            {{ tags_list[item] | strip_newlines }}
-        {% endcapture %}
-        <span class="tag is-light is-medium">{{ this_tag }}</span>
-        <ul>
-            {% for post in site.tags[this_tag] %}
-            {% if post.title != null %}
-            <li>
-            {% if post.link %}
-            <a href="{{ post.link }}" class="has-text-info">
-            {% else %}
-            <a href="{{ post.url | prepend: site.baseurl }}" class="has-text-info">
-            {% endif %}  
-            {{ post.title }}
-            </a>
-            </li>
-            {% endif %}
-        <br>
-        {% endfor %}
-</ul>
+  </ul>
+</div>
+
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+  {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  <article>
+
+  <div class="tag-title" id="{{ this_tag }}">
+    {{ this_tag }}
+  </div>
+    <ul>
+    {% for post in site.tags[this_tag] %}
+    {% if post.title != null %}
+      <li class="tag-post">
+        {% if post.link %}
+        <a href="{{ post.link }}">
+        {% else %}
+        <a href="{{ post.url | prepend: site.baseurl }}">
+        {% endif %}  
+          <span class="tag-post-title">{{ post.title }}</span>
+        </a>
+      </li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </article>
 {% endunless %}
 {% endfor %}
-
 </div>
