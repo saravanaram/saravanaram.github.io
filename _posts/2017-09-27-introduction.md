@@ -13,3 +13,9 @@ slug: introduction
 ---
 
 This post is about brief introduction of my blog.
+<div class="timeline">
+<div class="timeline-header"> timeline-header </div>
+<div class="timeline-item"> time line item </div>
+<div class="timeline-marker is-outlined">timeline marker is outlined</div>
+<div class="timeline-content"> time line content </div>
+</div>
