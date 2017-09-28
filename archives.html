@@ -20,7 +20,7 @@ permalink: archives.html
 {% assign tags_list = site_tags | split:',' | sort %}
 
 <div class="tag-index">
-  <ul>
+  <ul class="block">
     {% for item in (0..site.tags.size) %}
     {% unless forloop.last %}
       {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
