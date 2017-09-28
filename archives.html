@@ -22,21 +22,21 @@ permalink: archives.html
 <div class="tag-index">
     <div class="field is-grouped is-grouped-multiline">
   <div class="control">
-  <ul class="block">
+
     {% for item in (0..site.tags.size) %}
     {% unless forloop.last %}
       {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-      <li>
+
         <a href="#{{ this_tag }}">
           <div class="tags has-addons">
               <span class="tag">{{ this_tag }}</span>
               <span class="tag is-primary">{{ site.tags[this_tag].size }}</span>
             </div>   
         </a>
-      </li>
+
     {% endunless %}
     {% endfor %}
-  </ul>
+
 </div>
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
