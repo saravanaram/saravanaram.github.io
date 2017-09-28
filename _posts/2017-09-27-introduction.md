@@ -11,7 +11,7 @@ categories:
   - personal
 slug: introduction
 ---
-
+<div class="content">
 This post is about brief introduction of my blog.
 <ul class="timeline">
   <li class="timeline-header">
@@ -25,3 +25,4 @@ This post is about brief introduction of my blog.
   </div>
   </li>
 </ul>
+</div>
