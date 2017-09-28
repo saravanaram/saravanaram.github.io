@@ -26,6 +26,7 @@ permalink: archives.html
             <span class="tag is-info">{{ site.tags[this_tag].size }}</span>
         {% endunless %}
     {% endfor %}
+    <br>
     {% for item in (0..site.tags.size) %}{% unless forloop.last %}
         {% capture this_tag %}
             {{ tags_list[item] | strip_newlines }}
