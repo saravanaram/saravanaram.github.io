@@ -22,8 +22,10 @@ permalink: archives.html
             {% capture this_tag %}
                 {{ tags_list[item] | strip_newlines }}
             {% endcapture %}
+            <div class="tags has-addons">
             <span class="tag">{{ this_tag }}</span>
             <span class="tag is-info">{{ site.tags[this_tag].size }}</span>
+            </div>
         {% endunless %}
     {% endfor %}
     <br>
