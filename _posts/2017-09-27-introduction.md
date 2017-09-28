@@ -14,23 +14,14 @@ slug: introduction
 
 This post is about brief introduction of my blog.
 <ul class="timeline">
-<li class="timeline-header">
-<span class="tag is-medium-is-primary"> Start </span>
-</li>
-<li class="timeline-item">
-<div class="timeline-marker">
-</div>
-<div class="timeline-content">
-<p class="heading"> Jan 2016 <p>
-<p>Timeline content - include any html element</p></div>
-</li>
-
-<li class="timeline-item">
-<div class="timeline-marker is-image is-32x32">
-<img src="">
-</div>
-<div class="timeline-content">
-<p class="heading"> Feb 2016 <p>
-<p>Timeline content - include any html element</p></div>
-</li>
+  <li class="timeline-header">
+    <span class="tag is-medium-is-primary"> Start </span>
+  </li>
+  <li class="timeline-item">
+  <div class="timeline-marker"></div>
+  <div class="timeline-content">
+  <p class="heading"> Jan 2016 <p>
+  <p>Timeline content - include any html element</p>
+  </div>
+  </li>
 </ul>
