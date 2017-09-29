@@ -14,13 +14,13 @@ permalink: archives.html
         </div>
     </div>
 </section>
-<div class="content is-medium">
+
 {% capture site_categories %}
 {% for tag in site.categories %}
 {{ tag | first }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% endcapture %}
-
+<div class="bd-example">
 {% assign categories_list = site_categories | split:',' | sort %}
 <div class="field is-grouped is-grouped-multiline">
 
@@ -47,7 +47,7 @@ permalink: archives.html
 
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
   {% capture this_categories %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
-  <article>
+
        <div class="tag-title" id="{{ this_categories }}">
    <span class="tag is-light is-medium">{{ this_categories }}</span>
            </div>
@@ -71,6 +71,4 @@ permalink: archives.html
 {% endunless %}
 {% endfor %}
         </ul>
-
- 
-</div>
+<div class="bd-example">
