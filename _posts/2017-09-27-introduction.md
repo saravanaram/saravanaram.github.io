@@ -56,7 +56,7 @@ variables:
       <p>Timeline content - Can include any HTML element</p>
     </div>
   </li>
-  <li class="timeline-header">
+  <li class="timeline-header is-block">
     <span class="tag is-medium is-primary">End</span>
   </li>
 </ul>
