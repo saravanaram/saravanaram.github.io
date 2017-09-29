@@ -34,8 +34,8 @@ permalink: archives.html
       {% capture this_categories %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
      
         <a href="#{{ this_categories }}">
-              <span class="tag">{{ this_categories }}</span>
-      <span class="tag is-info">{{ site.categories[this_categories].size }}</span>
+              <span class="tag is-medium">{{ this_categories }}</span>
+      <span class="tag is-medium is-info">{{ site.categories[this_categories].size }}</span>
   
         </a>
   </div>
