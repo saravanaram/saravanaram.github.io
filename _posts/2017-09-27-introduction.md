@@ -28,7 +28,7 @@ variables:
   <li class="timeline-header is-block">
     <span class="tag is-medium is-primary">Start</span>
   </li>
-  <li class="timeline-item is-primary  is-block">
+  <li class="timeline-item is-primary is-block">
     <div class="timeline-marker is-primary"></div>
     <div class="timeline-content">
       <p class="heading">January 2016</p>
@@ -37,7 +37,6 @@ variables:
   </li>
   <li class="timeline-item is-warning">
     <div class="timeline-marker is-warning is-image is-32x32">
-      <img src="http://bulma.io/images/placeholders/32x32.png">
     </div>
     <div class="timeline-content">
       <p class="heading">February 2016</p>
@@ -49,7 +48,6 @@ variables:
   </li>
   <li class="timeline-item is-danger">
     <div class="timeline-marker is-danger is-icon">
-      <i class="fa fa-flag"></i>
     </div>
     <div class="timeline-content">
       <p class="heading">March 2017</p>
