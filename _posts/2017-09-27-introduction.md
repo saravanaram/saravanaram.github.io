@@ -28,11 +28,28 @@ variables:
   <li class="timeline-header is-block">
     <span class="tag is-medium is-primary">Start</span>
   </li>
-  <li class="timeline-item is-primary is-block">
-    <div class="timeline-marker is-primary"></div>
+
+  
+  <li class="timeline-item is-warning">
+    <div class="timeline-marker is-warning is-image is-32x32">
+    </div>
     <div class="timeline-content">
-      <p class="heading">January 2016</p>
+      <p class="heading">February 2016</p>
       <p>Timeline content - Can include any HTML element</p>
     </div>
+  </li>
+  <li class="timeline-header is-block">
+    <span class="tag is-primary">2017</span>
+  </li>
+  <li class="timeline-item is-danger">
+    <div class="timeline-marker is-danger is-icon">
+    </div>
+    <div class="timeline-content">
+      <p class="heading">March 2017</p>
+      <p>Timeline content - Can include any HTML element</p>
+    </div>
+  </li>
+  <li class="timeline-header is-block">
+    <span class="tag is-medium is-primary">End</span>
   </li>
 </ul>
