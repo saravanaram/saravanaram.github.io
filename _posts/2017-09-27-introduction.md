@@ -44,7 +44,7 @@ variables:
       <p>Timeline content - Can include any HTML element</p>
     </div>
   </li>
-  <li class="timeline-header">
+  <li class="timeline-header is-block">
     <span class="tag is-primary">2017</span>
   </li>
   <li class="timeline-item is-danger">
