@@ -27,7 +27,7 @@ permalink: /:title/
 
 sass:
   style: compressed
-paginate: 5
+paginate: 2
 paginate_path: "/:num/"
 markdown: kramdown
 defaults:
