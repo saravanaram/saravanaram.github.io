@@ -59,7 +59,7 @@ permalink: archives.html
 <ul>
     {% for post in site.categories[this_categories] %}
     {% if post.title != null %}
-      <li>
+      <li class="is-block">
         {% if post.link %}
         <a href="{{ post.link }}" class="has-text-info">
         {% else %}
