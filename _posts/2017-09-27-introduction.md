@@ -8,21 +8,7 @@ tags:
 categories:
   - personal
 slug: introduction
-variables:
-- name: $timeline-marker-background-color
-  value: $white
-- name: $timeline-marker-border
-  value: .1em solid $grey-light
-- name: $timeline-line
-  value: .1rem solid $grey-light
-- name: $timeline-content-padding
-  value: 1em 0 0 2em
-- name: $timeline-icon-size
-  value: $size-5
-- name: $timeline-header-width
-  value: 4em
-- name: $dimensions
-  value: 16 24 32 48 64 96 128
+
 ---
 <ul class="timeline">
   <li class="timeline-header is-block">
