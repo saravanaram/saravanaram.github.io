@@ -14,7 +14,7 @@ slug: introduction
 
 This post is about brief introduction of my blog.
 <ul class="timeline">
-  <li class="timeline-header">
+  <li class="timeline-header block">
  <span class="tag is-primary is-medium">Medium</span>
   </li>
   <li class="timeline-item">
