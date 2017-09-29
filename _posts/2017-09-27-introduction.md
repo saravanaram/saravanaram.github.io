@@ -28,7 +28,7 @@ variables:
   <li class="timeline-header is-block">
     <span class="tag is-medium is-primary">Start</span>
   </li>
-  <li class="timeline-item is-primary">
+  <li class="timeline-item is-primary  is-block">
     <div class="timeline-marker is-primary"></div>
     <div class="timeline-content">
       <p class="heading">January 2016</p>
