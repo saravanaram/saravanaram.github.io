@@ -25,7 +25,7 @@ variables:
   value: 16 24 32 48 64 96 128
 ---
 <ul class="timeline">
-  <li class="timeline-header">
+  <li class="timeline-header is-block">
     <span class="tag is-medium is-primary">Start</span>
   </li>
   <li class="timeline-item is-primary">
