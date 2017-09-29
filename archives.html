@@ -15,27 +15,27 @@ permalink: archives.html
     </div>
 </section>
 <div class="content is-medium">
-{% capture site_tags %}
-{% for tag in site.tags %}
+{% capture site_categories %}
+{% for tag in site.categories %}
 {{ tag | first }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% endcapture %}
 
-{% assign tags_list = site_tags | split:',' | sort %}
+{% assign categories_list = site_categories | split:',' | sort %}
 <section class="section">
     <div class="container is-fluid">
         <aside class="menu">
 <div class="field is-grouped is-grouped-multiline">
 
-    {% for item in (0..site.tags.size) %}
+    {% for item in (0..site.categories.size) %}
      <div class="control">
     <div class="tags has-addons">
     {% unless forloop.last %}
-      {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+      {% capture this_categories %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
      
-        <a href="#{{ this_tag }}">
-              <span class="tag">{{ this_tag }}</span>
-      <span class="tag is-info">{{ site.tags[this_tag].size }}</span>
+        <a href="#{{ this_categories }}">
+              <span class="tag">{{ this_categories }}</span>
+      <span class="tag is-info">{{ site.categories[this_categories].size }}</span>
   
         </a>
   </div>
@@ -48,13 +48,13 @@ permalink: archives.html
         <hr>
         <p></p>
         <aside>
-{% for item in (0..site.tags.size) %}{% unless forloop.last %}
-  {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+{% for item in (0..site.categories.size) %}{% unless forloop.last %}
+  {% capture this_categories %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
   <article>
-       <div class="tag-title" id="{{ this_tag }}">
+       <div class="tag-title" id="{{ this_categories }}">
  
 
-   <span class="tag is-light is-medium">{{ this_tag }}</span>
+   <span class="tag is-light is-medium">{{ this_categories }}</span>
            </div>
       <br>
 <ul>
