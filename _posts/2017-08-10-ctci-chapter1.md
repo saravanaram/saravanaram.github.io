@@ -8,7 +8,7 @@ tags:
   - problems
 categories:
   - code
-  - problems
+
 slug: ctci-chapter-1
 ---
 ## Interview Questions
