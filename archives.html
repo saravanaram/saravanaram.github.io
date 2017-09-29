@@ -22,19 +22,16 @@ permalink: archives.html
 {% endcapture %}
 
 {% assign categories_list = site_categories | split:',' | sort %}
-<section class="section">
-    <div class="container is-fluid">
-        <aside class="menu">
 <div class="field is-grouped is-grouped-multiline">
 
     {% for item in (0..site.categories.size) %}
-     <div class="control">
+    <div class="control">
     <div class="tags has-addons">
     {% unless forloop.last %}
       {% capture this_categories %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
      
         <a href="#{{ this_categories }}">
-              <span class="tag">{{ this_categories }}</span>
+      <span class="tag is-dark">{{ this_categories }}</span>
       <span class="tag is-info">{{ site.categories[this_categories].size }}</span>
   
         </a>
@@ -44,16 +41,14 @@ permalink: archives.html
     {% endfor %}
 
 </div>
-        </aside>
+
         <hr>
         <p></p>
-        <aside>
+
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
   {% capture this_categories %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
   <article>
        <div class="tag-title" id="{{ this_categories }}">
- 
-
    <span class="tag is-light is-medium">{{ this_categories }}</span>
            </div>
 <ul>
@@ -76,7 +71,6 @@ permalink: archives.html
 {% endunless %}
 {% endfor %}
         </ul>
-    </div>
-        </aside>
-</section>
+
+ 
 </div>
