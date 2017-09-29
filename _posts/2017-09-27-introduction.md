@@ -28,10 +28,9 @@ variables:
   <li class="timeline-header is-block">
     <span class="tag is-medium is-primary">Start</span>
   </li>
-
-  
+ 
   <li class="timeline-item is-warning">
-    <div class="timeline-marker is-warning is-image is-32x32">
+    <div class="timeline-marker is-warning is-icon">
     </div>
     <div class="timeline-content">
       <p class="heading">February 2016</p>
