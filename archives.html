@@ -56,9 +56,8 @@ permalink: archives.html
 
    <span class="tag is-light is-medium">{{ this_categories }}</span>
            </div>
-      <br>
 <ul>
-    {% for post in site.tags[this_tag] %}
+    {% for post in site.categories[this_categories] %}
     {% if post.title != null %}
       <li>
         {% if post.link %}
