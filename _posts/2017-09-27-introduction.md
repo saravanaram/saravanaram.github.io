@@ -33,7 +33,7 @@ slug: introduction
     </div>
     <div class="timeline-content">
       <p class="heading">March 2016</p>
-      <p>Still wondering ....</p>
+      <p>Still wondering</p>
     </div>
   </li>
   
@@ -46,7 +46,7 @@ slug: introduction
     </div>
     <div class="timeline-content">
       <p class="heading">Oct 2017</p>
-      <p>Still wondering ....</p>
+      <p>Still wondering</p>
     </div>
   </li>
   
