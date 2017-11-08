@@ -2,7 +2,20 @@
 layout: default
 ---
 
-<section class="section">
+
+  <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+            <div class="tile is-parent">
+                 <!--<article class="tile is-child notification is-danger">
+                    <p class="title">Wide tile</p>
+                    <p class="subtitle">Aligned with the right tile</p>
+                    <div class="content">
+                        Content 
+                    </div>
+                </article>-->
+
+                
+ <section class="section">
     <div class="container is-fluid">
         {% for post in paginator.posts %}
         <div class="content">
@@ -45,17 +58,8 @@ layout: default
         </nav>
     </div>
 </section>
-
-  <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-danger">
-                    <p class="title">Wide tile</p>
-                    <p class="subtitle">Aligned with the right tile</p>
-                    <div class="content">
-                        <!-- Content -->
-                    </div>
-                </article>
+               
+                
             </div>
        </div>
         <div class="tile is-parent">
