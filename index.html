@@ -30,6 +30,7 @@ layout: default
  <div class="spacer"></div>
         {% endfor %}
     </div>
+    <div class="content">
         <nav class="pagination is-centered is-dark">
               <ul class="pagination-list has-text-dark">
             <li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %} is-link">Previous Page</a></li>
@@ -42,5 +43,6 @@ layout: default
             <li><a {% if paginator.next_page %}href="{{ site.baseurl }}{{  paginator.next_page_path }}"{% endif %} class="pagination-next {% if paginator.next_page %}{% else %} is-disabled {% endif %} is-link">Next Page</a></li>
 </ul>
         </nav>
+</div>
     </div>
 </section>
