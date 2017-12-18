@@ -30,7 +30,7 @@ layout: default
  <div class="spacer"></div>
         {% endfor %}
     </div>
-    <div class="content">
+    <div class="block">
         <nav class="pagination is-centered is-dark">
               <ul class="pagination-list has-text-dark">
             <li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %} is-link">Previous Page</a></li>
