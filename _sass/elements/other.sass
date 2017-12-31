@@ -1,25 +1,8 @@
 .block
   +block
 
-.container
-  position: relative
-  +desktop
-    margin: 0 auto
-    max-width: $desktop - 40px // 960px
-    // Modifiers
-    &.is-fluid
-      margin: 0 20px
-      max-width: none
-  +widescreen
-    max-width: $widescreen - 40px // 1152px
-
 .delete
   +delete
-
-.fa
-  font-size: 21px
-  text-align: center
-  vertical-align: top
 
 .heading
   display: block
@@ -41,10 +24,10 @@
 .loader
   +loader
 
-.number:not(.token)
+.number
   align-items: center
   background-color: $background
-  border-radius: 290486px
+  border-radius: $radius-rounded
   display: inline-flex
   font-size: $size-medium
   height: 2em

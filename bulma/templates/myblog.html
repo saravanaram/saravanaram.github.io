@@ -1,54 +1,17 @@
----
-layout: "compress"
----
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="author" content="{{ site.author.name }}">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="{{"/assets/css/application.css" | prepend: site.baseurl }}" />
-    <link rel="stylesheet" href="{{"/assets/css/prism.css" | prepend: site.baseurl }}" />
-    {% include opengraph.html %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello Bulma!</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
 </head>
 <body>
-    <!--<nav class="nav has-shadow" id="top">
-        <div class="container">
-            <div class="nav-left">
-                <a class="nav-item" href="../index.html">
-                    <img src="/assets/images/favicon.png" alt="Saravanan">
-                </a>
-            </div>
-            <span class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-            <div class="nav-right nav-menu">
-                <a class="nav-item is-tab is-active" href="../index.html"> Home </a>
-                <a class="nav-item is-tab" href="../about.html"> About </a>
-                <a class="nav-item is-tab" href="../archives.html"> Archives </a>
-                <a class="nav-item is-tab" href="../feed.xml"> Feed </a>
-                <span class="nav-item"> 
-                    <a class="button"> Log in </a>
-                    <a class="button is-info"> Sign up </a>
-                </span>
-            </div>
-        </div>
-    </nav>-->
-    <section class="hero is-dark is-bold">
+<section class="hero is-dark is-bold">
     <div class="hero-body">
         <div class="container">
-            <a href="/"><h1 class="title">Saravanan</h1>
+            <a><h1 class="title">Saravanan</h1>
             <h2 class="subtitle">I am full stackoverflow developer!</h2></a>
         </div>
     </div>
@@ -105,7 +68,7 @@ layout: "compress"
       <div class="navbar-item">
         <div class="field is-grouped">
             <p class="control">
-            <a class="is-primary" href="../index.html">
+            <a class="is-primary">
               <span class="icon">
                 <i class="fa fa-home"></i>
               </span>
@@ -115,7 +78,7 @@ layout: "compress"
             </a>
           </p>  
                       <p class="control">
-            <a class="is-primary" href="../about.html">
+            <a class="is-primary">
               <span class="icon">
                 <i class="fa fa-user"></i>
               </span>
@@ -125,7 +88,7 @@ layout: "compress"
             </a>
           </p>  
                       <p class="control">
-            <a class="is-primary"  href="../archives.html">
+            <a class="is-white">
               <span class="icon">
                 <i class="fa fa-archive"></i>
               </span>
@@ -135,7 +98,7 @@ layout: "compress"
             </a>
           </p>  
                       <p class="control">
-            <a class="is-primary"  href="../feed.xml">
+            <a class="is-primary">
               <span class="icon">
                 <i class="fa fa-rss"></i>
               </span>
@@ -149,13 +112,6 @@ layout: "compress"
     </div>
   </div>
 </nav>   
-    <section class="section">
-        <div class="container content">
-           <!-- <p class="has-text-centered">Skeleton template for a basic layout.</p>-->
-            {{ content }}
-        </div>
-    </section>
-    {% include footer.html %}
-    <script type="text/javascript" src="/assets/js/bulma.js"></script>
-</body>
+
+ </body>
 </html>
