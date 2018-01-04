@@ -8,14 +8,14 @@ layout: default
             {% if post.thumbnail %}
             <div class="card-image">
                 <figure class="image">
-                    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="primary is-inverted">
+                    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" >
                         <img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="{{ post.title }}">
                     </a>
                 </figure>
             </div>
             {% endif %}
             <div class="content is-medium">
-                <h3 class="post-title is-dark"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="has-text-info">{{ post.title }}</a></h3>
+                <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="primary is-inverted">{{ post.title }}</a></h3>
                 <p class="post-categories">
                      <p class="tag"> tags: 
                     {% for category in post.categories %}
