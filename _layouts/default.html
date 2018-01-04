@@ -22,66 +22,67 @@ layout: "compress"
     {% include opengraph.html %}
 </head>
 <body>
-    <section class="hero is-dark is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <a href="/"><h1 class="title">Saravanan</h1>
-            <h2 class="subtitle">I am full stackoverflow developer!</h2></a>
-        </div>
+  <section class="hero is-primary">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+    <nav class="main-nav nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item" href="../index.html">
+        <h1 class="title">SARAVANAN</h1>
+      </a>
+  
     </div>
-</section>
-<section class="section" id="nav">
-         <nav class="nav">
-          <div class="nav-left">
-            <a class="nav-item"> Saravanan</a>
-          </div>
-          <div class="nav-center">
-            <a class="nav-item">
-              <span class="icon"> <i class="fa fa-github"></i> </span>
-            </a>
-            <a class="nav-item">
-              <span class="icon"> <i class="fa fa-twitter"></i> </span>
-            </a>
-          </div>
-          <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-          <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-          <span class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-          <!-- This "nav-menu" is hidden on mobile -->
-          <!-- Add the modifier "is-active" to display it on mobile -->
-          <div class="nav-right nav-menu">
-            <a class="nav-item"> Home </a>
-            <a class="nav-item"> Documentation </a>
-            <a class="nav-item"> Blog </a>
-            <div class="nav-item">
-              <div class="field is-grouped">
-                <p class="control">
-                  <a class="button">
-                    <span class="icon">
-                      <i class="fa fa-twitter"></i>
-                    </span>
-                    <span>Tweet</span>
-                  </a>
-                </p>
-                <p class="control">
-                  <a class="button is-primary">
-                    <span class="icon">
-                      <i class="fa fa-download"></i>
-                    </span>
-                    <span>Download</span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <hr>
-     </section>    
-    <section class="section">
-        <div class="container content">
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu">
+         <a class="nav-item" href="../index.html" >
+        <span class="icon"> <i class="fa fa-home fa-2x"></i> </span>
+      </a>
+               <a class="nav-item" href="../about.html">
+        <span class="icon"> <i class="fa fa-user fa-2x"></i> </span>
+      </a>
+            <a class="nav-item" href="../archives.html">
+        <span class="icon"> <i class="fa fa-archive fa-2x"></i> </span>
+      </a>
+   
+         <a class="nav-item" href="//github.com/saravanaram" target="_blank">
+        <span class="icon"> <i class="fa fa-github fa-2x"></i> </span>
+      </a>
+      <a class="nav-item" href="//twitter.com/saravanaram" target="_blank">
+        <span class="icon"> <i class="fa fa-twitter fa-2x"></i> </span>
+      </a>
+         <a class="nav-item" href="../feed.xml" >
+        <span class="icon"> <i class="fa fa-rss fa-2x"></i> </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+    </div>
+    <!-- Hero content: will be in the middle -->
+    <!--<div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Saravanan
+        </h1>
+        <h2 class="subtitle">
+          I am full stackoverflow developer
+        </h2>
+        <p>
+          <a class="button is-primary is-inverted" href="/bulmaswatch/yeti/bulmaswatch.min.css" target="_blank" onclick="ga('send', 'event', 'theme', 'download', 'Yeti');">Download</a>
+          <a class="button is-dark" href="//github.com/jenil/bulmaswatch/tree/gh-pages/yeti" target="_blank" onclick="ga('send', 'event', 'theme', 'github', 'Yeti');" title="Download from Github">
+            <span class="icon"> <i class="fa fa-github"> </i> </span>
+          </a>
+        </p>
+      </div>
+    </div>-->
+  </section>
+      <section class="section" id="content">
+        <div class="content">
            <!-- <p class="has-text-centered">Skeleton template for a basic layout.</p>-->
             {{ content }}
         </div>
