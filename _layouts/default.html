@@ -20,8 +20,17 @@ layout: "compress"
     <link rel="stylesheet" href="{{"/assets/css/bulmaswatch.min.css" | prepend: site.baseurl }}" />
     <link rel="stylesheet" href="{{"/assets/css/prism.css" | prepend: site.baseurl }}" />
     {% include opengraph.html %}
+    .Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+
+.Site-content {
+  flex: 1;
+}
 </head>
-<body>
+<body class="Site">
   <section class="hero is-primary">
     <!-- Hero header: will stick at the top -->
     <div class="hero-head">
@@ -40,23 +49,23 @@ layout: "compress"
     </span>
     <div class="nav-right nav-menu">
          <a class="nav-item" href="../index.html" >
-        <span class="icon"> <i class="fa fa-home fa-2x"></i> </span>
+        Home
       </a>
                <a class="nav-item" href="../about.html">
-        <span class="icon"> <i class="fa fa-user fa-2x"></i> </span>
+        About
       </a>
             <a class="nav-item" href="../archives.html">
-        <span class="icon"> <i class="fa fa-archive fa-2x"></i> </span>
+        Archives
       </a>
    
-         <a class="nav-item" href="//github.com/saravanaram" target="_blank">
+         <!--<a class="nav-item" href="//github.com/saravanaram" target="_blank">
         <span class="icon"> <i class="fa fa-github fa-2x"></i> </span>
       </a>
       <a class="nav-item" href="//twitter.com/saravanaram" target="_blank">
         <span class="icon"> <i class="fa fa-twitter fa-2x"></i> </span>
-      </a>
+      </a>-->
          <a class="nav-item" href="../feed.xml" >
-        <span class="icon"> <i class="fa fa-rss fa-2x"></i> </span>
+        Feed
       </a>
     </div>
   </div>
