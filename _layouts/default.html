@@ -20,7 +20,8 @@ layout: "compress"
     <link rel="stylesheet" href="{{"/assets/css/bulmaswatch.min.css" | prepend: site.baseurl }}" />
     <link rel="stylesheet" href="{{"/assets/css/prism.css" | prepend: site.baseurl }}" />
     {% include opengraph.html %}
-    .Site {
+    <style type="text/css">
+        .Site {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -29,6 +30,7 @@ layout: "compress"
 .Site-content {
   flex: 1;
 }
+    </style>
 </head>
 <body class="Site">
   <section class="hero is-primary">
