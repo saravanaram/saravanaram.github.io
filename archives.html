@@ -61,7 +61,7 @@ permalink: archives.html
     {% if post.title != null %}
       <li class="is-block">
         {% if post.link %}
-        <a href="{{ post.link }}" class="has-text-info">
+        <a href="{{ post.link }}" class="primary is-inverted">
         {% else %}
         <a href="{{ post.url | prepend: site.baseurl }}" class="primary is-inverted">
         {% endif %}  
