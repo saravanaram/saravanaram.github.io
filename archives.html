@@ -33,7 +33,7 @@ permalink: archives.html
     {% unless forloop.last %}
       {% capture this_categories %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
      
-        <a href="#{{ this_categories }}">
+        <a href="#{{ this_categories }}" class="primary is-inverted">
               <span class="tag is-medium">{{ this_categories }}</span>
       <span class="tag is-medium is-info">{{ site.categories[this_categories].size }}</span>
   
@@ -63,7 +63,7 @@ permalink: archives.html
         {% if post.link %}
         <a href="{{ post.link }}" class="has-text-info">
         {% else %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="has-text-info">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="primary is-inverted">
         {% endif %}  
           {{ post.title }}
         </a>
