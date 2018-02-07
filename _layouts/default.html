@@ -1,13 +1,15 @@
----
-layout: "compress"
----
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="simple.css" type="text/css" />
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.author.name }}">
@@ -15,91 +17,112 @@ layout: "compress"
     <link rel="icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml" />
-   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="{{"/assets/css/application.css" | prepend: site.baseurl }}" /> -->
-    <link rel="stylesheet" href="{{"/assets/css/bulmaswatch.min.css" | prepend: site.baseurl }}" />
-    <link rel="stylesheet" href="{{"/assets/css/prism.css" | prepend: site.baseurl }}" />
-    {% include opengraph.html %}
-  
+    <link rel="stylesheet" href="{{"/assets/css/simple.css" | prepend: site.baseurl }}" />
+   	
 </head>
-<body>
-  <section class="hero is-primary">
-    <!-- Hero header: will stick at the top -->
-    <div class="hero-head">
-    <nav class="main-nav nav has-shadow">
-  <div class="container">
-    <div class="nav-left">
-      <a class="nav-item" href="../index.html">
-        <h1 class="title">SARAVANAN</h1>
-      </a>
-  
-    </div>
-    <span class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-    <div class="nav-right nav-menu">
-         <a class="nav-item" href="../index.html" >
-        Home
-      </a>
-               <a class="nav-item" href="../about.html">
-        About
-      </a>
-            <a class="nav-item" href="../archives.html">
-        Archives
-      </a>
-   
-         <!--<a class="nav-item" href="//github.com/saravanaram" target="_blank">
-        <span class="icon"> <i class="fa fa-github fa-2x"></i> </span>
-      </a>
-      <a class="nav-item" href="//twitter.com/saravanaram" target="_blank">
-        <span class="icon"> <i class="fa fa-twitter fa-2x"></i> </span>
-      </a>-->
-         <a class="nav-item" href="../feed.xml" >
-        Feed
-      </a>
-    </div>
-  </div>
-</nav>
 
-    </div>
-    <!-- Hero content: will be in the middle -->
-    <!--<div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Saravanan
-        </h1>
-        <h2 class="subtitle">
-          I am full stackoverflow developer
-        </h2>
-        <p>
-          <a class="button is-primary is-inverted" href="/bulmaswatch/yeti/bulmaswatch.min.css" target="_blank" onclick="ga('send', 'event', 'theme', 'download', 'Yeti');">Download</a>
-          <a class="button is-dark" href="//github.com/jenil/bulmaswatch/tree/gh-pages/yeti" target="_blank" onclick="ga('send', 'event', 'theme', 'github', 'Yeti');" title="Download from Github">
-            <span class="icon"> <i class="fa fa-github"> </i> </span>
-          </a>
-        </p>
-      </div>
-    </div>-->
-  </section>
- <div class="columns">
-    <div class="column">
-      <section class="section">
-        <div class="content">
-           <!-- <p class="has-text-centered">Skeleton template for a basic layout.</p>-->
-            {{ content }}
+<body>
+    <h1>Saravanan <br /> I am a full stackoverlow developer</h1>
+    <header>
+        <nav>
+            <ul class="nav inline-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../archives.html">Archives</a></li>
+                <li><a href="../about.html">About</a></li>
+								<li><a href="../feed.xml">RSS Feed</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="columnsContainer">
+			 <div class="leftColumn">
+				 {{content}}
+			 </div>
+        <div class="leftColumn">
+            <h2>Left Column (fluid)</h2>
+            <hr />
+            <p>Bacon ipsum dolor sit amet capicola ball tip beef ribs leberkas, turkey biltong salami shoulder ribeye. Leberkas chuck cow andouille kevin ribeye pork strip steak pork chop beef ribs beef ball tip corned beef. Leberkas prosciutto brisket, short ribs salami cow sirloin chicken. Bacon pork belly bresaola tenderloin biltong leberkas. Strip steak beef leberkas sirloin, venison turkey hamburger kevin. Drumstick chicken ground round t-bone flank fatback jerky ball tip. Jerky ribeye sirloin t-bone.</p>
+            <p>Tongue prosciutto pork ball tip ham hock, meatball sirloin brisket kielbasa biltong doner shoulder bresaola. Chuck beef ribs biltong, kielbasa ground round swine andouille corned beef. Venison hamburger tongue shank. Leberkas doner pork chop sausage kielbasa pancetta, biltong brisket pastrami tenderloin boudin filet mignon sirloin cow meatloaf. Ham ball tip bacon pork belly sirloin.</p>
+            <p>Shoulder pig short ribs, salami chicken venison bresaola. Frankfurter meatball pork chop pork loin, turkey strip steak kielbasa pork belly drumstick shank prosciutto. Pork chicken ground round, sirloin tri-tip ham hock pork chop cow meatloaf pork loin bresaola turkey. Prosciutto hamburger pork short ribs flank tri-tip chicken pig bacon meatloaf t-bone shankle doner. Bresaola doner spare ribs biltong jowl boudin, tri-tip pork leberkas ham hock filet mignon.</p>
+            <p>Leberkas strip steak shoulder meatball, flank biltong shank fatback ball tip swine prosciutto hamburger. Jerky frankfurter drumstick, ham ham hock hamburger kevin kielbasa salami chuck. Flank rump beef cow, beef ribs meatball ball tip jowl bacon pork chop. Biltong tongue pork chop hamburger. Frankfurter tri-tip pancetta pork chop venison t-bone andouille beef ribs salami boudin meatball doner spare ribs. Brisket pork chop pig kielbasa jerky chuck pork belly beef meatball boudin short loin. Doner jerky andouille ham meatloaf prosciutto kevin pork belly short loin pancetta.</p>
+            <p>Corned beef spare ribs hamburger pork tenderloin flank pork loin beef ribs sausage brisket chicken venison bacon short loin sirloin. Ribeye tail short ribs andouille kevin chicken shankle meatloaf, corned beef rump sirloin t-bone chuck tongue. Swine venison tongue, sirloin turducken drumstick bresaola strip steak rump. Kevin ham hock meatball tri-tip. Ground round leberkas pig beef salami strip steak meatball beef ribs. Chicken ball tip rump, short loin bresaola pork t-bone jerky jowl pork chop tail chuck sausage prosciutto.</p>
         </div>
-    </section>
+        <div class="rightColumn">
+            <h2>Right Column</h2>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        </div>
+        <div class="leftColumn">
+            <h2>Left Column (fluid)</h2>
+            <p>Bacon ipsum dolor sit amet capicola ball tip beef ribs leberkas, turkey biltong salami shoulder ribeye. Leberkas chuck cow andouille kevin ribeye pork strip steak pork chop beef ribs beef ball tip corned beef. Leberkas prosciutto brisket, short ribs salami cow sirloin chicken. Bacon pork belly bresaola tenderloin biltong leberkas. Strip steak beef leberkas sirloin, venison turkey hamburger kevin. Drumstick chicken ground round t-bone flank fatback jerky ball tip. Jerky ribeye sirloin t-bone.</p>
+            <p>Tongue prosciutto pork ball tip ham hock, meatball sirloin brisket kielbasa biltong doner shoulder bresaola. Chuck beef ribs biltong, kielbasa ground round swine andouille corned beef. Venison hamburger tongue shank. Leberkas doner pork chop sausage kielbasa pancetta, biltong brisket pastrami tenderloin boudin filet mignon sirloin cow meatloaf. Ham ball tip bacon pork belly sirloin.</p>
+            <p>Shoulder pig short ribs, salami chicken venison bresaola. Frankfurter meatball pork chop pork loin, turkey strip steak kielbasa pork belly drumstick shank prosciutto. Pork chicken ground round, sirloin tri-tip ham hock pork chop cow meatloaf pork loin bresaola turkey. Prosciutto hamburger pork short ribs flank tri-tip chicken pig bacon meatloaf t-bone shankle doner. Bresaola doner spare ribs biltong jowl boudin, tri-tip pork leberkas ham hock filet mignon.</p>
+            <p>Leberkas strip steak shoulder meatball, flank biltong shank fatback ball tip swine prosciutto hamburger. Jerky frankfurter drumstick, ham ham hock hamburger kevin kielbasa salami chuck. Flank rump beef cow, beef ribs meatball ball tip jowl bacon pork chop. Biltong tongue pork chop hamburger. Frankfurter tri-tip pancetta pork chop venison t-bone andouille beef ribs salami boudin meatball doner spare ribs. Brisket pork chop pig kielbasa jerky chuck pork belly beef meatball boudin short loin. Doner jerky andouille ham meatloaf prosciutto kevin pork belly short loin pancetta.</p>
+            <p>Corned beef spare ribs hamburger pork tenderloin flank pork loin beef ribs sausage brisket chicken venison bacon short loin sirloin. Ribeye tail short ribs andouille kevin chicken shankle meatloaf, corned beef rump sirloin t-bone chuck tongue. Swine venison tongue, sirloin turducken drumstick bresaola strip steak rump. Kevin ham hock meatball tri-tip. Ground round leberkas pig beef salami strip steak meatball beef ribs. Chicken ball tip rump, short loin bresaola pork t-bone jerky jowl pork chop tail chuck sausage prosciutto.</p>
+        </div>
+        <div class="leftColumn">
+         
+            <!-- Standard Headings -->
+            <h1>Heading</h1>
+            <h2>Heading</h2>
+            <h3>Heading</h3>
+            <h4>Heading</h4>
+            <h5>Heading</h5>
+            <h6>Heading</h6>
+            <p>Example</p>
+            <!-- Base type size -->
+            <p>The base type is 15px over 1.6 line height (24px)</p>
+
+            <!-- Other styled text tags -->
+            <strong>Bolded</strong>
+            <em>Italicized</em>
+            <a>Colored</a>
+            <u>Underlined</u>
+            <ul>
+                <li>Item 1</li>
+                <li>
+                    Item 2
+                    <ul>
+                        <li>Item 2.1</li>
+                        <li>Item 2.2</li>
+                    </ul>
+                </li>
+                <li>Item 3</li>
+            </ul>
+
+            <!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels -->
+            <pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+
+            <!-- Remember every whitespace and break will be preserved in a <pre>, including indentation in your code -->
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dave Gamache</td>
+                        <td>26</td>
+                        <td>Male</td>
+                        <td>San Francisco</td>
+                    </tr>
+                    <tr>
+                        <td>Dwayne Johnson</td>
+                        <td>42</td>
+                        <td>Male</td>
+                        <td>Hayward</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre>This is in pre tag</pre>
+        </div>
     </div>
-    <div class="column is-2">
-      <aside class="menu section">
-      </aside>
-    </div>
-</div>		
-    
-    
-    
-    {% include footer.html %}
-    <script type="text/javascript" src="/assets/js/bulma.js"></script>
+    <footer>
+        <p>Copyright 2018 - Saravanan. Blog content licensed under the <a href="//creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons </a> Unless otherwise stated or granted, code samples licensed under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a> license. <br> </p>
+    </footer>
 </body>
 </html>

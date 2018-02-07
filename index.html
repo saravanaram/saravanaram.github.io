@@ -1,49 +1,59 @@
 ---
 layout: default
 ---
-<section class="section">
-    <div class="container is-fluid">
-        {% for post in paginator.posts %}
-        <div class="content">
-            {% if post.thumbnail %}
-            <div class="card-image">
-                <figure class="image">
-                    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" >
-                        <img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="{{ post.title }}">
-                    </a>
-                </figure>
-            </div>
-            {% endif %}
-            <div class="content is-medium">
-                <h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="primary is-inverted">{{ post.title }}</a></h3>
-                <p class="post-categories">
-                     <p class="tag"> tags: 
-                    {% for category in post.categories %}
-                    {{ category }}, 
-                    {% endfor %}
-                 Posted on:&nbsp;{{post.date | date: ' %B %d, %Y'}}</p></p>
-                 
-                {{ post.description | markdownify }}
-               
-            </div>
-        </div>
- <div class="spacer"></div>
-        {% endfor %}
-    </div>
- 
-    </div>
-</section>
-   <div class="block">
-        <nav class="pagination is-centered is-dark">
-              <ul class="pagination-list has-text-dark">
-            <li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %} is-link">Previous Page</a></li>
-                      
-                {% for page in (1..paginator.total_pages) %}
-                <li>
-                    <a {% if page == paginator.page %}{% else %} href="{% if page == 1 %}../{% else %}{% if paginator.page != 1 %}../{% endif %}{{ page }}{% endif %}" {% endif %} class="pagination-link {% if page == paginator.page %} is-current {% endif %} has-text-info-invert">{{ page }}</a>
-                </li>
-                {% endfor %}
-            <li><a {% if paginator.next_page %}href="{{ site.baseurl }}{{  paginator.next_page_path }}"{% endif %} class="pagination-next {% if paginator.next_page %}{% else %} is-disabled {% endif %} is-link">Next Page</a></li>
-</ul>
-        </nav>
+{% for post in paginator.posts %}
+
+<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" >{{ post.title }}</a>
+<p>
+<p> tags: 
+{% for category in post.categories %}
+{{ category }}, 
+{% endfor %}
+Posted on:&nbsp;{{post.date | date: ' %B %d, %Y'}}</p></p>
+
+{{ post.description | markdownify }}
+
+
+{% endfor %}
+</article>
+<ul>
+<li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %} is-link">Previous Page</a></li>
+
+{% for page in (1..paginator.total_pages) %}
+<li>
+<a {% if page == paginator.page %}{% else %} href="{% if page == 1 %}../{% else %}{% if paginator.page != 1 %}../{% endif %}{{ page }}{% endif %}" {% endif %} class="pagination-link {% if page == paginator.page %} is-current {% endif %} has-text-info-invert">{{ page }}</a>
+</li>
+{% endfor %}
+<li><a {% if paginator.next_page %}href="{{ site.baseurl }}{{  paginator.next_page_path }}"{% endif %} class="pagination-next {% if paginator.next_page %}{% else %} is-disabled {% endif %} is-link">Next Page</a></li>
+</ul> 
+<!--{% for post in paginator.posts %}
+{% if post.thumbnail %}
+<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" >
+<img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="{{ post.title }}">
+</a>
+{% endif %}
+<h3 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="primary is-inverted">{{ post.title }}</a></h3>
+<p class="post-categories">
+<p class="tag"> tags: 
+{% for category in post.categories %}
+{{ category }}, 
+{% endfor %}
+Posted on:&nbsp;{{post.date | date: ' %B %d, %Y'}}</p></p>
+
+{{ post.description | markdownify }}
+
 </div>
+</div>
+{% endfor %}
+<nav class="pagination is-centered is-dark">
+<ul class="pagination-list has-text-dark">
+<li><a {% if paginator.previous_page %}href="{{ site.baseurl }}{{  paginator.previous_page_path }}"{% endif %} class="pagination-previous {% if paginator.previous_page %}{% else %} is-disabled {% endif %} is-link">Previous Page</a></li>
+
+{% for page in (1..paginator.total_pages) %}
+<li>
+<a {% if page == paginator.page %}{% else %} href="{% if page == 1 %}../{% else %}{% if paginator.page != 1 %}../{% endif %}{{ page }}{% endif %}" {% endif %} class="pagination-link {% if page == paginator.page %} is-current {% endif %} has-text-info-invert">{{ page }}</a>
+</li>
+{% endfor %}
+<li><a {% if paginator.next_page %}href="{{ site.baseurl }}{{  paginator.next_page_path }}"{% endif %} class="pagination-next {% if paginator.next_page %}{% else %} is-disabled {% endif %} is-link">Next Page</a></li>
+</ul>
+</nav>-->
