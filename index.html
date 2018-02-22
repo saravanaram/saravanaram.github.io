@@ -18,28 +18,13 @@ layout: default
 {% endfor %}
 
 
-<div class="nav top">
-   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="past">Previous</a>
-  {% else %}
-  <span class="previous">Previous</span>
-  {% endif %}
-  {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="future">Next</a>
-  {% else %}
-  <span class="next">Next</span>
-  {% endif %}    
- </div>
-
 <div class="nav">
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path }}" class="past">Previous</a>
   {% else %}
-  <span class="previous">Previous</span>
+   
   {% endif %}
   {% if paginator.next_page %}
   <a href="{{ paginator.next_page_path }}" class="future">Next</a>
-  {% else %}
-  <span class="next">Next</span>
   {% endif %}    
 </div>
