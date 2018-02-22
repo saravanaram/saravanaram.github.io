@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+<h2>{{ page.title }}</h2>
+<p class="post-date">{{page.date | date: ' %B %d, %Y'}}</p>
+<p>tags: 
+{% for category in page.categories %}
+{{ category }}
+{% endfor %}
+</p>
+<div class="summary">
+    <p>
+{{ page.content }}
+    </p>
+</div>

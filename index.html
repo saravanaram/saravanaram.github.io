@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+<div class="post">
+    <h2>{{post.title}}</h2>
+    <p class="post-date">{{post.date | date: ' %B %d, %Y'}}</p>
+    <div class="summary">
+       <p>{{ post.description | markdownify }}</p>
+    </div>
+    <div class="after"><a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+        {% for category in post.categories %}
+         <p>Tagged: <a href="#">{{ category }}</a></p>
+          {% endfor %}
+    </div>
+</div>
+{% endfor %}
+
+
+<div class="nav top">
+   {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="past">Previous</a>
+  {% else %}
+  <span class="previous">Previous</span>
+  {% endif %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="future">Next</a>
+  {% else %}
+  <span class="next">Next</span>
+  {% endif %}    
+ </div>
+
+<div class="nav">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="past">Previous</a>
+  {% else %}
+  <span class="previous">Previous</span>
+  {% endif %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="future">Next</a>
+  {% else %}
+  <span class="next">Next</span>
+  {% endif %}    
+</div>

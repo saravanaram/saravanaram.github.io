@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{"/assets/css/main.css" | prepend: site.baseurl }}" />
+    <!--<link rel="stylesheet" href="{{"/assets/css/prism.css" | prepend: site.baseurl }}" />-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="robots" content="index, follow">
+  	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+    <link rel="icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+ </head>
+<body>
+    <div id="content">
+        <div id="sidebar">
+            <h1><a href="/">Saravanan</a></h1>       
+            <ul class="social">
+                <li><a href="//twitter.com/saravanaram"><span class="fa fa-twitter-square"></span></a></li>
+                <li><a href=""><span class="fa fa-linkedin-square"></span></a></li>
+                <li><a href="//github.com/saravanaram"><span class="fa fa-github-square"></span></a></li>
+                <li><a href="../feed.xml"><span class="fa fa-rss-square"></span></a></li>
+            </ul>
+            <ul class="links">
+                <li><a href="/">Blog</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../archives.html">Archives</a></li>
+                <li><a href="../feed.xml">Feed</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <!--<div class="nav top"><a class="past" href="./?index=40">past</a> <span> </span><a class="future" href="./?index=0">future </a></div>
+            <ul class="post-list">-->
+            <!--</ul>
+            <div class="nav"><a class="past" href="./?index=40">past</a> <span> </span><a class="future" href="./?index=0">future</a></div>-->
+            {{ content }}
+        </div>
+     
+    </div>
+   <!-- <script src="{{"/assets/css/prism.css" | prepend: site.baseurl }}" type="text/javascript" />-->
+ </body>
+</html>
