@@ -1,24 +1,25 @@
 ---
 layout: default
 ---
-
+<div class="band">
+{% assign numPosts = 1 %}
 {% for post in paginator.posts %}
-<div class="post">
-    <h2>{{post.title}}</h2>
-    <p class="post-date">{{post.date | date: ' %B %d, %Y'}}</p>
-    <div class="summary">
-       <p>{{ post.description | markdownify }}</p>
-    </div>
-    <div class="after"><a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
-        {% for category in post.categories %}
-         <p>Tagged: <a href="#">{{ category }}</a></p>
-          {% endfor %}
-    </div>
-</div>
+<div class="item-{{numPosts}}">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="card">
+    <article>
+        <h1>{{post.title}}</h1>
+        <p>{{ post.description | markdownify }}</p>
+        <span><time datetime="{{post.date}}">{{post.date | date: ' %B %d, %Y'}}</time>
+
+        Category: {{ post.categories }}
+        </span>
+    </article>
+    </a>        
+ </div>
+ {% assign numPosts = numPosts | plus: 1 %}
 {% endfor %}
 
-
-<div class="nav">
+<!--<div class="nav">
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path }}" class="past">Previous</a>
   {% else %}
@@ -27,4 +28,5 @@ layout: default
   {% if paginator.next_page %}
   <a href="{{ paginator.next_page_path }}" class="future">Next</a>
   {% endif %}    
+</div>-->
 </div>

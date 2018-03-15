@@ -27,9 +27,10 @@ permalink: /:title/
 
 sass:
   style: compressed
-paginate: 2
+paginate: 6
 paginate_path: "/:num/"
 markdown: kramdown
+syntax_highlighter: rouge
 defaults:
   -
     scope:
