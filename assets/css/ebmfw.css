@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo 2', sans-serif;
     font-weight: normal;
 }
-code, samp, kbd {
+/*code, samp, kbd {
 	font-family: "Courier New", Courier, monospace, sans-serif;
 	text-align: left;
   color: #002b36;
@@ -30,7 +30,7 @@ pre {
 	margin: 1.7em 0 1.7em 0.3em;
 	overflow: auto;
   
-}
+}*/
 
 a {
     border-bottom: 1px solid #444444;
