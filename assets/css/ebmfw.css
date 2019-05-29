@@ -1,17 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Exo+2);
+
 body {
     margin: 5% auto;
     background: #f2f2f2;
     color: #444444;
-    font-family: -apple-system, BlinkMacSystemFont,  'Open Sans', Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,  Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.8;
     text-shadow: 0 1px 0 #ffffff;
     max-width: 73%;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: sans-serif;
     font-weight: normal;
 }
 /*code, samp, kbd {
