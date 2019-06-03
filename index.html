@@ -7,10 +7,9 @@ layout: default
 <div class="item-{{numPosts}}">
     <a href="{{ site.baseurl }}{{ post.url }}" class="card">
     <article>
-        <h1>{{post.title}}</h1>
+        <h2>{{post.title}}</h2>
         <p>{{ post.description | markdownify }}</p>
         <span><time datetime="{{post.date}}">{{post.date | date: ' %B %d, %Y'}}</time>
-
         Category: {{ post.categories }}
         </span>
     </article>
