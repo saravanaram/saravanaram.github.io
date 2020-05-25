@@ -5,11 +5,11 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 <span><time datetime="{{page.date}}">{{page.date | date: ' %B %d, %Y'}}</time>
-tags: 
+Tags: 
 {% for tag in page.tags %}
 #{{ tag }}
 {% endfor %}
-Category: {{page.categories}}
+Categories: {{page.categories}}
  </span>
 <div class="summary">
     <p>

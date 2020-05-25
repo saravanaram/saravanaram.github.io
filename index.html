@@ -1,18 +1,14 @@
 ---
 layout: default
 ---
-<div class="band">
+<!--<div class="band"> -->
 {% assign numPosts = 1 %}
 {% for post in paginator.posts %}
-<div class="item-{{numPosts}}">
-    <a href="{{ site.baseurl }}{{ post.url }}" class="card">
-    <article>
+<!--<div class="item-{{numPosts}}"> -->
+        <!--<time datetime="{{post.date}}">{{post.date | date: ' %B %d, %Y'}}</time>-->
+    <a href="{{ site.baseurl }}{{ post.url }}">
         <h2>{{post.title}}</h2>
-        <p>{{ post.description | markdownify }}</p>
-        <span><time datetime="{{post.date}}">{{post.date | date: ' %B %d, %Y'}}</time>
-        Category: {{ post.categories }}
-        </span>
-    </article>
+       <!-- <p>{{ post.description | markdownify }}</p> -->
     </a>        
  </div>
  {% assign numPosts = numPosts | plus: 1 %}

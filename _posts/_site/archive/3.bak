@@ -1,18 +1,3 @@
----
-layout: post
-title:  "A sample post about my blog theme"
-description: "This is how various html elements/tags looks is rendered on my theme"
-date:   "2018-02-20 14:30:00 -0900"
-tags:
-  - Theme
-  - Jekyll 
-  - Example
-categories:
-  - Meta
-
-slug: example
----
-
 # H1
 ## H2
 ### H3
@@ -104,14 +89,12 @@ No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
 
-{% highlight C %}
-#include <stdio.h>
-int main()
-{
-  printf("Hello World");
-  return 0;
-}
-{% endhighlight %}
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
 
 Colons can be used to align columns.
 

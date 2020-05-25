@@ -38,7 +38,7 @@ defaults:
       type: "posts"
     values:
       comments: true
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-gist

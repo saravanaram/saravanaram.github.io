@@ -4,11 +4,11 @@ title:  "A sample post about my blog theme"
 description: "This is how various html elements/tags looks is rendered on my theme"
 date:   "2018-02-20 14:30:00 -0900"
 tags:
-  - Theme
-  - Jekyll 
-  - Example
+  - theme
+  - jekyll
+  - example
 categories:
-  - Meta
+  - meta
 
 slug: example
 ---
