@@ -1,3 +1,44 @@
 ---
 layout: cv
 ---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{"/assets/css/resume.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{"/assets/css/prism.css" | prepend: site.baseurl }}" />
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="robots" content="index, follow">
+  	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+    <link rel="icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+ </head>
+<body>
+    <main>
+        <h1>SARAVANAN</h1>
+     </main>
+    <hr />
+    <header>
+    </header>
+        <nav>
+            <a href="/">Blog</a>
+            <a href="../about.html">About Me</a>
+            <a href="../archives.html">Archives</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../feed.xml">Feed</a>
+        </nav>
+    <div class="content">
+        <div class="support-grid"></div>
+            {{ content }}
+    </div>
+    <hr />
+    <footer>
+   <p>Copyright © 2021 - Saravanan Blog content licensed under the Creative Commons CC BY 2.5 | Unless otherwise stated or granted, code samples licensed under the MIT license.  </p>
+        
+    </footer> 
+      <script src="{{"/assets/js/prism.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>
