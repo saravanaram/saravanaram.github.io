@@ -1,0 +1,27 @@
+layout: default
+---
+<!--<div class="band"> -->
+{% assign numPosts = 1 %}
+{% for post in paginator.posts %}
+<!--<div class="item-{{numPosts}}"> -->
+        <!--<time datetime="{{post.date}}">{{post.date | date: ' %B %d, %Y'}}</time>-->
+    <a href="{{ site.baseurl }}{{ post.url }}">
+        <h2>{{post.title}}</h2>
+       <!-- <p>{{ post.description | markdownify }}</p> -->
+    </a>        
+ </div>
+ {% assign numPosts = numPosts | plus: 1 %}
+{% endfor %}
+
+<!--<div class="nav">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="past">Previous</a>
+  {% else %}
+   
+  {% endif %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="future">Next</a>
+  {% endif %}    
+</div>-->
+</div>
+<hr/>

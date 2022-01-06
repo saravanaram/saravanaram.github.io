@@ -1,18 +1,18 @@
 ---
-layout: default
+layout: new
 ---
 
-
+<div class="content">
 <h2>{{ page.title }}</h2>
-<span><time datetime="{{page.date}}">{{page.date | date: ' %B %d, %Y'}}</time>
-Tags: 
+<h3><span><time datetime="{{page.date}}">{{page.date | date: ' %B %d, %Y'}}</time> </span></h3>
+<div class="tags">
 {% for tag in page.tags %}
-#{{ tag }}
+<span class="tag is-info is-rounded">#{{ tag }}</span>
 {% endfor %}
-Categories: {{page.categories}}
- </span>
+</div>
 <div class="summary">
     <p>
 {{ page.content }}
     </p>
+</div>
 </div>

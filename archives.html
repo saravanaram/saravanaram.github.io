@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: new
 permalink: archives.html
 ---
 
+<div class="content is-medium">
 <h2> Archive by tags </h2>
 <hr>
 {% capture site_tags %}
@@ -13,20 +14,23 @@ permalink: archives.html
 
 {% assign tags_list = site_tags | split:',' | sort %}
 
-<div>
-  <ul>
+<div class="field is-grouped is-grouped-multiline">
+  
     {% for item in (0..site.tags.size) %}
     {% unless forloop.last %}
       {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-      <li>
+      <div class="control">
+        <div class="tags has-addons">    
         <a href="#{{ this_tag }}">
-          <span>{{ this_tag }}</span>
-          <span>{{ site.tags[this_tag].size }}</span>
+          <div class="tags has-addons"><span class="tag is-dark">{{ this_tag }}</span>
+          <span class="tag is-info">{{ site.tags[this_tag].size }}</span></div>
         </a>
-      </li>
+        </div>
+        </div>
+     
     {% endunless %}
     {% endfor %}
-  </ul>
+  
 </div>
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
@@ -53,3 +57,4 @@ permalink: archives.html
 {% endunless %}
 {% endfor %}
 <hr/>
+</div>
