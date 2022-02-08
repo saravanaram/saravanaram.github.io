@@ -37,6 +37,7 @@ layout: new
           </div> 
         -->       {% assign numPosts = 1 %}
         {% for post in paginator.posts %}
+        {% if post.hide == null or post.hide == false %}
         <div class="content is-medium">
             <a href="{{ site.baseurl }}{{ post.url }}">
                 <h2 class="subtitle is-4">{{post.title}}</h2>
@@ -49,6 +50,7 @@ layout: new
             <p>{{post.description}}</p>
             <hr>       
          {% assign numPosts = numPosts | plus: 1 %}
+         {% endif %}
         {% endfor %}
         </div>
     </div>
