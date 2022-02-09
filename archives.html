@@ -8,7 +8,9 @@ permalink: archives.html
 <hr>
 {% capture site_tags %}
 {% for tag in site.tags %}
+{% if post.hide == null or post.hide == false %}
 {{ tag | first }}{% unless forloop.last %},{% endunless %}
+     {% endif %}
 {% endfor %}
 {% endcapture %}
 
