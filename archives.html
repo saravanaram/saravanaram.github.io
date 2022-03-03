@@ -22,11 +22,13 @@ permalink: archives.html
     {% unless forloop.last %}
       {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
       <div class="control">
-        <div class="tags has-addons">    
+        <div class="tags has-addons"> 
+          {%if site.tags[this_tag].size != null %}   
         <a href="#{{ this_tag }}">
           <div class="tags has-addons"><span class="tag is-dark">{{ this_tag }}</span>
           <span class="tag is-info">{{ site.tags[this_tag].size }}</span></div>
         </a>
+        {% endif %}
         </div>
         </div>
      
@@ -37,9 +39,11 @@ permalink: archives.html
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  {%if site.tags[this_tag].size != null %} 
   <div id="{{ this_tag }}">
     {{ this_tag }}
   </div>
+  {% endif %}
     <ul>
     {% for post in site.tags[this_tag] %}
     {% if post.title != null %}
